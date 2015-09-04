@@ -1,0 +1,430 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont-webfont.eot') format('embedded-opentype'),
+    url('../fonts/raleway-regular-webfont-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-regular-webfont-webfont.woff') format('woff'),
+    url('../fonts/raleway-regular-webfont-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-regular-webfont-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont-webfont.eot') format('embedded-opentype'),
+    url('../fonts/raleway-bold-webfont-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-bold-webfont-webfont.woff') format('woff'),
+    url('../fonts/raleway-bold-webfont-webfont.ttf') format('truetype'),
+    url('../fonts/raleway-bold-webfont-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ---------- KLASY OGÓLNE*/
+.center_content {
+    width: 1200px;
+    margin: auto;
+}
+
+.center_content_narrow {
+    width: 1070px;
+    margin: auto;
+}
+
+.spacer {
+    clear: both;
+}
+
+.bold {
+    font-family: 'ralewaybold', arial bold, sans-serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text_tuquoise {
+    color: #26c7a9;
+}
+
+.text_white {
+    color: white;
+}
+
+.text_gray{
+    color: #c2c2c2;
+}
+
+.text_dark_gray{
+    color: #a1a1a1;
+}
+
+.background_turquoise {
+    background: #26c7a9;
+}
+
+.background_white{
+    background-color: white;
+}
+
+/* ---------- BODY*/
+
+body {
+    font-family: 'ralewayregular', sans-serif;
+    font-size: 12px;
+}
+
+/*---------- GÓRNE MENU*/
+.top_menu {
+    color: white;
+    background-color: #000000;
+    font-size: 1.5em;
+}
+
+.top_menu ul {
+    float: right;
+    margin: 8px 0 8px 0;
+}
+
+.top_menu ul li {
+    display: inline-block;
+    padding: 0 5px 0 5px;
+}
+
+.top_menu .logo {
+    float: left;
+    margin: 8px 0 8px 0;
+}
+
+/*-------------- SLIDESHOW*/
+.slideshow {
+    background: #fcfcfc;
+    background: -moz-linear-gradient(top, #fcfcfc 0%, #cecdd4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #cecdd4));
+    background: -webkit-linear-gradient(top, #fcfcfc 0%, #cecdd4 100%);
+    background: -o-linear-gradient(top, #fcfcfc 0%, #cecdd4 100%);
+    background: -ms-linear-gradient(top, #fcfcfc 0%, #cecdd4 100%);
+    background: linear-gradient(to bottom, #fcfcfc 0%, #cecdd4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#cecdd4', GradientType=0);
+    position: relative;
+}
+
+.strzalka_lewa, .strzalka_prawa {
+    font-size: 50px;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.strzalka_lewa {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.strzalka_prawa {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.slideshow_title_text_button {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+.slideshow img {
+    display: inline-block;
+}
+
+.text_sit_on {
+    font-size:3.3em;
+    margin-bottom: 15px;
+}
+
+.tekst_slideshow {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.button {
+    width: 200px;
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 1.8em;
+}
+
+/*PASEK OBRAZKI*/
+
+.box_three_pictures {
+    margin-top: 15px;
+    position: relative;
+}
+
+.picture_chair {
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.picture_baby {
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+}
+
+.picture_text_box {
+    border: solid 1px lightgray;
+    width: 329px;
+    height: 225px;
+    float: right;
+}
+
+.picture_chair_box, .picture_baby_box {
+    height: 60px;
+    width: 329px;
+    background-color: rgba(245, 245, 245, 0.5);
+    position: absolute;
+    top: 150px;
+}
+
+.picture_chair_box_line, .picture_baby_box_line, .picture_text_box_line {
+    background-color: #26c7a9;
+    height: 8px;
+    width: 140px;
+
+}
+
+.picture_chair_box span[class="bold"], .picture_chair_box div, .picture_baby_box span[class="bold"], .picture_baby_box div {
+    left: 20px;
+    top: 15px;
+    position: relative;
+}
+
+.picture_text_box{
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.picture_text_box p{
+    margin-top: 20px;
+}
+
+.picture_chair span[class="bold"], .picture_baby span[class="bold"], .picture_text_box span[class="bold"]{
+    font-size: 1.3em;
+}
+
+/* ------------  CENNIK*/
+
+.cennik_container_big {
+    background-color: #f0f0f0;
+    height: 700px;
+    margin-top: 40px;
+}
+
+.title_cennik span{
+    font-size: 2em;
+    line-height: 5em;
+}
+
+.line_cennik{
+    height: 8px;
+    width: 329px;
+}
+
+.cennik_container_plany{
+    margin-top: 60px;
+}
+
+.container_plan{
+    width: 329px;
+    height: 500px;
+    display: inline-block;
+    vertical-align: top;
+    border: solid 2px #c2c2c2;
+    text-align: center;
+    position: relative;
+}
+
+.container_standard_plan{
+    margin-left: 32px;
+    border: solid 2px #26c7a9;
+}
+
+.container_advance_plan{
+    margin-left: 32px;
+}
+
+.circle_plan{
+    background-color: #c2c2c2;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    border: solid 10px white;
+    box-shadow: 0 0 0 2px #c2c2c2;
+    position: absolute;
+    top: -35px;
+    left: 140px;
+}
+
+.circle_standard_plan{
+    background-color: white;
+    border: solid 10px #26c7a9;
+    box-shadow: 0 0 0 2px #26c7a9;
+}
+
+
+.circle_inside{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: solid 2px #c2c2c2;
+    background-color: white;
+    margin: auto;
+
+}
+
+.plan_title{
+    line-height: 5em;
+    font-size: 2em;
+
+}
+
+.price_big{
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+.price_small{
+    font-size: 50%;
+    vertical-align: top;
+}
+
+.plan_list{
+    margin-top: 40px;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.plan_list li:nth-child(2n+2){
+    background-color: #e3e3e3;
+}
+.plan_list li:nth-child(2n+1){
+    background-color: #c2c2c2;
+}
+
+.container_standard_plan li:nth-child(2n+1){
+    background-color: white;
+}
+
+.cennik_button{
+    padding: 8px 8px;
+    display: block;
+    width: 35%;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 107px;
+}
+
+
+/*-------------- KONTAKT*/
+.contact_title{
+    line-height: 5em;
+    font-size: 1.3em;
+}
+
+.contact_underline{
+    height: 8px;
+    width: 329px;
+    margin-bottom: 40px;
+}
+
+.contact_form{
+    width: 66%;
+    height: 380px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+}
+
+
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    font-size: 2em;
+    border: solid 1px #26c7a9;
+
+}
+
+.contact_form_information{
+    height: 190px;
+}
+
+/*BOX WITH RED ARMCHAIR*/
+
+.contact_send{
+    width: 31%;
+    height: 380px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    position: relative;
+}
+
+.contact_checkbox_container {
+    margin: 30px;
+}
+
+.contact_checkbox_container span{
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+.confirmation_image{
+    float: left;
+    border: solid 1px #c2c2c2;
+    margin-right: 10px;
+}
+
+.contact_send_button{
+    padding: 10px 110px;
+    color: white;
+    border-radius: 5px;
+    background-color: #26c7a9;
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    font-size: 1.8em;
+}
+
+    /*FOOTER*/
+
+footer{
+    height: 80px;
+    position: relative;
+    top: 60px;
+}
+
+.social_icons{
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    bottom: 52px;
+}
+
+footer span:first-of-type{
+    float: left;
+}
+
+.logo_footer{
+    float: right;
+}
